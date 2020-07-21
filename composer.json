@@ -1,0 +1,12 @@
+{
+    "name": "afashio/language",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "afashio",
+            "email": "push.webstudio@gmail.com"
+        }
+    ],
+    "require": {}
+}
