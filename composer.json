@@ -8,5 +8,10 @@
             "email": "push.webstudio@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "afashio\\language\\": "src"
+        }
+    }
 }

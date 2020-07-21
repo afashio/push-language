@@ -1,6 +1,6 @@
 <?php
 
-namespace afashio\language;
+namespace afashio\language\models;
 
 use Yii;
 use yii\helpers\ArrayHelper;
