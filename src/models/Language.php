@@ -24,23 +24,32 @@ class Language extends \yii\db\ActiveRecord
     }
 
     /**
-     * @return \common\models\Language[]
+     * @return \afashio\language\models\Language[]
      */
     public static function languageList(): array
     {
         return self::find()->all();
     }
 
+    /**
+     * @return array
+     */
     public static function languageIdsList()
     {
         return ArrayHelper::getColumn(self::find()->select('id')->orderBy('id')->asArray()->all(), 'slug');
     }
 
+    /**
+     * @return array
+     */
     public static function languageNameArray()
     {
         return ArrayHelper::getColumn(self::find()->select('slug')->orderBy('id')->asArray()->all(), 'slug');
     }
 
+    /**
+     * @return array
+     */
     public static function getLanguagesAsArray()
     {
         return ArrayHelper::map(self::languageList(), 'name', 'slug');
